@@ -77,7 +77,7 @@ header {
     border: 1px solid var(--border-color);
     border-radius: 9999px;
     display: block;
-    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
 }
 
 .light #switch button {
@@ -101,7 +101,7 @@ nav {
     background: var(--background-color) ;
     border: 1px solid var(--border-color);
     border-radius: 8px;
-    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     color: var(--text-color);
     transition: 0.3s;
 }
