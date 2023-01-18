@@ -23,7 +23,7 @@
     --background-color: rgba(0, 0, 0, 0);
     --border-color: rgb(0, 0, 0, 0.5);
     --border-color-hover: #000000;
-    --background-color-hover: rgba(0, 0, 0, 0.02);
+    --background-color-hover: rgba(0, 0, 0, 0.04);
     --hight-light-color: rgba(0, 0, 0, 0.1);
     --transition-icon: url(./assets/sun.svg);
     --color-link-name: #B227FF;
@@ -34,6 +34,9 @@ body {
     background: var(--bg-url) no-repeat top center/cover;
     transition: 0.3s;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 header {

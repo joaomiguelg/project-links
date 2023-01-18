@@ -9,7 +9,7 @@ function toggleMode() {
         img.setAttribute("src", "./assets/Ellipse.png")
 
     } else {
-        img.setAttribute("src", "./assets/Ellipse.png")
+        img.setAttribute("src", "./assets/Ellipse-dark.png")
     }
     
 
