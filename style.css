@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+p {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+    font-weight: 500;
+    size: 16px;
+    line-height: 24px;
+}
+
+/*var's*/
+
 :root {
     --text-color: #FFFFFF;
     --bg-url: url(./assets/bg-mobile-dark.jpg);
@@ -30,6 +40,8 @@
     --color-link-name-hover: #b327ff7e;
 }
 
+/*containers*/
+
 body {
     background: var(--bg-url) no-repeat top center/cover;
     transition: 0.3s;
@@ -43,13 +55,38 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     gap: 8px;
     padding: 24px;
     margin: 56px auto 0px;
 }
 
+#perfil-image {
+    width: 112px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 16px;
+    padding: 24px;
+}
+
+footer {
+    justify-content: center;
+    display: flex;
+
+    padding: 24px;
+    margin: 0 auto;
+}
+
+/*switch*/
+
 #switch {
     position: relative;
+
     width: 64px;
     margin: 4px auto;
 }
@@ -57,29 +94,35 @@ header {
 #switch button {
     width: 32px;
     height: 32px;
-    background: #FFFFFF var(--transition-icon) no-repeat center;
     border-radius: 50%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 0;
+
+    background: #FFFFFF var(--transition-icon) no-repeat center;
+    
     position: absolute;
     transform: translateY(-50%);
     top: 50%;
     left: 0;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border: 0;
+    
     animation: slide-out 0.2s;
 }
 
 #switch button:hover {
     cursor: pointer;
+
     outline: 8px solid var(--hight-light-color);
 }
 
 #switch span {
+    display: block;
+
     width: 64px;
     height: 24px;
-    background-color: var(--background-color);
     border: 1px solid var(--border-color);
     border-radius: 9999px;
-    display: block;
+
+    background-color: var(--background-color);
     -webkit-backdrop-filter: blur(4px);
 }
 
@@ -87,13 +130,7 @@ header {
     animation: slide-in 0.2s forwards;
 }
 
-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    padding: 24px;
-}
+/*buttons*/
 
 .links {
     width: 50vw;
@@ -101,11 +138,13 @@ nav {
     max-width: 540px;
     height: 56px;
     font-size: 16px;
-    background: var(--background-color) ;
     border: 1px solid var(--border-color);
     border-radius: 8px;
+
+    background: var(--background-color) ;
     -webkit-backdrop-filter: blur(4px);
     color: var(--text-color);
+
     transition: 0.3s;
 }
 
@@ -120,41 +159,25 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+
     padding: 24px;
 }
 
 #socials a {
-    display: flex;
     font-size: 24px;
-    color: var(--text-color);
     padding: 16px;
-    transition: 0.3s;
     border-radius: 50%;
-}
-
-footer {
-    margin: 0 auto;
-    justify-content: center;
-    display: flex;
-    padding: 24px;
-}
-
-p {
-    font-family: 'Inter', sans-serif;
     color: var(--text-color);
-    font-weight: 500;
-    size: 16px;
-    line-height: 24px;
-}
 
-#perfil-image {
-    width: 112px;
+    transition: 0.3s;      
 }
 
 #socials a:hover {
     background-color: var(--hight-light-color);
     
 }
+
+/*link-dev-name*/
 
 .link-nome {
     text-decoration: none;
@@ -164,6 +187,8 @@ p {
 .link-nome:hover {
     color: var(--color-link-name-hover);
 }
+
+/*media queries*/
 
 @media (min-width:700px) {
     :root {
@@ -175,6 +200,8 @@ p {
     }
 
 }
+
+/*keyframes*/
 
 @keyframes slide-in {
     from {

@@ -1,3 +1,14 @@
+
+
+function addClass (){
+    let root = document.documentElement
+
+    if (root.classList = none) {
+        root.addClass("light")
+    } else (root.classList = none)
+    
+}
+
 function toggleMode() {
     const html = document.documentElement
 
